@@ -182,4 +182,8 @@ public class ConfigLoader {
 	public boolean isDebugEnabled() {
 		return getBoolean("debug");
 	}
+
+	public boolean isFeatureEnabled(String featureName) {
+		return getBoolean("menu-features."+featureName);
+	}
 }

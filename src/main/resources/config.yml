@@ -315,6 +315,19 @@ disabled-worlds-pattern:
   - "em_*"
   - "minigame_*_end"
 
+menu-features:
+  manage-players: true
+  claimed-chunks: true
+  manage-flags: true
+  misc-settings: true
+  sub-areas: true
+  logs: true
+  weather-and-time: true
+  rewards: true
+  rent: true
+  levels: true
+  rank: true
+
 # Disabled Flags
 # Prevent players from changing these specific flags
 #
