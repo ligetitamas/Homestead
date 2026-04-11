@@ -145,13 +145,13 @@ public class RegionMenu {
 
 			if (event.isLeftClick()) {
 				if (!player.hasPermission("homestead.region.weather")) {
-					Messages.send(player, 205);
+					Messages.send(player, 210);
 					return;
 				}
 				region.setWeather(WeatherType.next(region.getWeather()));
 			} else if (event.isRightClick()) {
 				if (!player.hasPermission("homestead.region.time")) {
-					Messages.send(player, 206);
+					Messages.send(player, 211);
 					return;
 				}
 				region.setTime(TimeType.next(region.getTime()));
