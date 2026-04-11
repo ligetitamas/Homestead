@@ -137,14 +137,23 @@ public class RegionMenu {
 		});
 
 		gui.addItem(16, MenuUtils.getButton(16, placeholder), (_player, event) -> {
+
 			if (!PlayerUtils.hasControlRegionPermissionFlag(region.getUniqueId(), player,
 					RegionControlFlags.SET_WEATHER_AND_TIME)) {
 				return;
 			}
 
 			if (event.isLeftClick()) {
+				if (!player.hasPermission("homestead.region.weather")) {
+					Messages.send(player, 205);
+					return;
+				}
 				region.setWeather(WeatherType.next(region.getWeather()));
 			} else if (event.isRightClick()) {
+				if (!player.hasPermission("homestead.region.time")) {
+					Messages.send(player, 206);
+					return;
+				}
 				region.setTime(TimeType.next(region.getTime()));
 			}
 

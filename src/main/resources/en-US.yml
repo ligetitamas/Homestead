@@ -259,6 +259,8 @@ prefix: "&8[&6Homestead&8]&r"
 202: "{__prefix__} &7Done."
 203: "{__prefix__} &cYou don't have {price} to teleport!"
 204: "{__prefix__} &7You are no longer a member of the region &2{region}&7!"
+205: "{__prefix__} &cYou have no permission to set the region's local weather."
+206: "{__prefix__} &cYou have no permission to set the region's local time."
 
 logs:
   0: "By {executor}, updated region name to {newname}."

@@ -67,6 +67,10 @@ permissions:
     default: true
   homestead.region.flags.members:
     default: true
+  homestead.region.weather:
+    default: true
+  homestead.region.time:
+    default: true
   homestead.region.subareas.create:
     default: true
   homestead.region.subareas.delete:
@@ -100,6 +104,8 @@ permissions:
       homestead.region.flags.global: true
       homestead.region.flags.world: true
       homestead.region.flags.members: true
+      homestead.region.weather: true
+      homestead.region.time: true
       homestead.region.subareas.create: true
       homestead.region.subareas.delete: true
       homestead.region.subareas.rename: true
